@@ -66,15 +66,15 @@ Shell Linux :
 
 Q1. disposition du clavier américain ?
 
-> votre réponse ?!
+qwerty
 
 Q2. disposition du clavier suisse-romand ?
 
-> votre réponse ?!
+qwertz
 
 Q3. disposition du le clavier français ? 
 
-> votre réponse ?!
+azerty
 
 **H.** Déplacez-vous à la **racine du système** en utilisant la commande suivante : `cd` 
 
