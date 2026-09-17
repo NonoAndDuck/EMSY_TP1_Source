@@ -66,19 +66,21 @@ Shell Linux :
 
 Q1. disposition du clavier américain ?
 
-qwerty
+qwerty (en_US)
 
 Q2. disposition du clavier suisse-romand ?
 
-qwertz
+qwertz (fr_CH)
 
 Q3. disposition du le clavier français ? 
 
-azerty
+azerty (fr) ou (fr_FR)
 
 **H.** Déplacez-vous à la **racine du système** en utilisant la commande suivante : `cd` 
 
 Q4. vore commande ?!
+
+cd /
 
 **I.** Affichez le contenu de la racine avec la commande : `ls –l`	
 
@@ -87,6 +89,8 @@ Q4. vore commande ?!
 Q5. Que signifie l'option `-l` avec la commande `ls` 
 
 > votre réponse ?!
+
+Affiche le résultat de ls en une list, avec plus d'information (permission de fichier, date de modif etc)
 
 Q6. Décrypter la ligne où se trouve le répertoire **home**    
 
@@ -98,24 +102,34 @@ Q6. Décrypter la ligne où se trouve le répertoire **home**
 
 Q7. dans quel dossier racine allez-vous le placer (justifiez votre réponse) 
 
-> votre réponse ?! 
+> votre réponse ?!
+
+home/live
 
 Q8. Quelle commande allez-vous utiliser pour faire ceci ?  
 
-> votre commande ?! 
+> votre commande ?!
+
+mkdir /home/live/EMSY_NRN
 
 **K.** Dans ce répertoire, créez un fichier texte que vous nommerez `TESTSLO_XXX_XXX` et éditez celui en écrivant un texte, exemple : "TP linux by XXX et XXX".
 	   Utiliser la commande `vi`
 
-> votre commande ?! 
+> votre commande ?!
+
+vi /home/live/EMSY_NRN/TESTSLO_NRN
 
 Q9. Pouvez-vous éditez un fichier uniquement avec la commande `vi` 
 
 > votre réponse ?!
 
+oui
+
 Q10. Si vous éteignez la machine virtuelle et que vous la rallumez, est-ce que le répertoire créé ci-dessus existe toujours (justifiez votre réponse) ? 
 
 > votre réponse ?!
+
+Non car nous somme dans l'ISO, le systeme est actuallement une image chargé du disque, elle n'est pas sauvegarder ??
 
 **L.** Tapez la commande `ls -l /dev/sda` 
 
@@ -124,6 +138,8 @@ Q10. Si vous éteignez la machine virtuelle et que vous la rallumez, est-ce que 
 Q11. Que signifie **sda** ? 
 
 > votre réponse ?!
+
+Le disque dur(sd) a
 
 Q12. Quelle différence y a-t-il entre le répertoire de la question Q6 et celui du point L (justifiez votre réponse) ?
 
@@ -139,17 +155,25 @@ Q13. Quelle est la taille de disque minimum recommandée pour installer la distr
 
 > votre réponse ?!
 
+10G
+
 Q14. A quoi sert la partition swap ? Est-ce que ce principe existe-t-il sur les OS Microsoft Windows ? 
 
 > votre réponse ?!
+
+C'est l'équivalent du Pagefile sur windows. Elle permet d'écrire des données de la ram dans le disque dur.
 
 Q15. Quel format pourriez-vous utiliser pour la 3ème partition afin qu’elle soit également accessible depuis un OS Microsoft ? 
 
 > votre réponse ?!
 
+Microsoft basic data
+
 Q16. Durant l’installation, on vous demande deux noms d’utilisateur. A quoi correspondent-ils ? 
 
 > votre réponse ?!
+
+Le nom long est le nom complet de l'utilisateur, le nom court est celui qui est utiliser par linux pour référer a l'utilisateur (par ex le dossier home sera le nom court)
 
 **N.** Une fois l’installation de Linux terminée, prenez une capture d’écran du démarrage de votre système (GRUB)
 
@@ -169,13 +193,19 @@ Q17. A quoi sert `nano` ?
 
 > votre réponse ?!
 
+C'est un éditeur de texte
+
 **Q.** Testez si l’application `git` est installée sur votre distribution, si ce n’est pas le cas installez un client git. 
 
 Q18. Comment savoir si `git` est déjà installé ? 
 
 > votre réponse ?!
 
-> votre commande ?! 
+L'on peut simplement essayer d'utiliser la commande git, si elle est présente nous aurons une erreur d'argument manquans, si git n'est pas installer l'erreur seras "command not found"
+
+> votre commande ?!
+
+git
 
 Q19. Si le client `git` n'est pas installé, quelle(s) commande(s) utilisez-vous pour l’installer ? 
 
@@ -185,23 +215,33 @@ Q20. Que veut dire `apt` ?
 
 > votre réponse ?!
 
+C'est le package manager (l'installateur de logiciel). Son nom veux dire "Advanced Packaging Tool"
+
 Q21. Est-ce que cette commande (`apt`) peut être utilisée sur toutes les distributions Linux (justifiez votre réponse)? 
 
 > votre réponse ?!
+
+Pas tous ! Pas toutes les distros linux utilise le meme package manager, certaine utilise pacman, nix, guix, etc..
 
 **R.** Créez un sous-répertoire « EMSY_TP1_XXX-YYY » dans le répertoire de votre utilisateur. 
        
 **Attention** : Ici on veut que l’utilisateur (vous) ait les droits de lecture, d’écriture et d’exécution.
 
-> votre commande ?! 
+> votre commande ?!
+
+mkdir ~/EMSY_TP1_NRN
 
 Q22. Quel est le répertoire utilisateur ?  
 
 > votre réponse ?!
 
+~/ ou /home/noah
+
 Q23. Quelles sont les commandes pour changer les droits d'utilisateurs (lecture - écriture - execution) ?  
 
-> votre commande ?! 
+> votre commande ?!
+
+chmod +rwx ~/EMSY_TP1_NRN
 
 **S.** Dans ce répertoire, tapez la commande : `git clone https://github.com/votreDepot/EMSY_TP1_Source`
 
