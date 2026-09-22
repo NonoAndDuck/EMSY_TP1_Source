@@ -167,7 +167,7 @@ Q15. Quel format pourriez-vous utiliser pour la 3ème partition afin qu’elle s
 
 > votre réponse ?!
 
-Microsoft basic data
+Microsoft basic data (Fat32)
 
 Q16. Durant l’installation, on vous demande deux noms d’utilisateur. A quoi correspondent-ils ? 
 
@@ -229,7 +229,7 @@ Pas tous ! Pas toutes les distros linux utilise le meme package manager, certain
 
 > votre commande ?!
 
-mkdir ~/EMSY_TP1_NRN
+mkdir ~/EMSY_TP1_NRN -m=rwx
 
 Q22. Quel est le répertoire utilisateur ?  
 
@@ -241,7 +241,7 @@ Q23. Quelles sont les commandes pour changer les droits d'utilisateurs (lecture 
 
 > votre commande ?!
 
-chmod +rwx ~/EMSY_TP1_NRN
+chmod u+rwx ~/EMSY_TP1_NRN (u pour l'utilisateur possédent le fichier, a pour tous les utilisateus, g pour les utilisateurs dans le group dans le quelle le fichier est, o pour les utilisateur n'étant pas dans le group du fichier)
 
 **S.** Dans ce répertoire, tapez la commande : `git clone https://github.com/votreDepot/EMSY_TP1_Source`
 
