@@ -181,7 +181,9 @@ Le nom long est le nom complet de l'utilisateur, le nom court est celui qui est 
 
 **O.** Trouvez la ou les lignes de commande permettant de changer le clavier et procédez à la configuiration 
 
-> votre commande ?! 
+> votre commande ?!
+
+sudo nano /etc/default/keyboard -> Layout="ch", variant="fr" ou sudo dkpg-reconfigure keyboard-configuration
 
 ![Placer votre capture d'écran]() 
 
