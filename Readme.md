@@ -169,7 +169,20 @@ home est un dossier normal. /dev/sda n'est pas un dossier, c'est un fichier repr
 
 **M.** Installez SparkyLinux
 
-![Placer vos captures d'écrans de l'installation]()
+![Virtual disk](/Images/Screen_Installer_Sparkylinux.jpg)
+![Virtual disk](/Images/Screen_Installer_Sparkylinux2.jpg)
+![Virtual disk](/Images/Screen_Installer_Sparkylinux3.jpg)
+![Virtual disk](/Images/Screen_Installer_Sparkylinux4.jpg)
+![Virtual disk](/Images/Screen_Installer_Sparkylinux5.jpg)
+![Virtual disk](/Images/Screen_Installer_Sparkylinux6.jpg)
+![Virtual disk](/Images/Screen_Installer_Sparkylinux7.jpg)
+![Virtual disk](/Images/Screen_Installer_Sparkylinux8.jpg)
+![Virtual disk](/Images/Screen_Installer_Sparkylinux9.jpg)
+![Virtual disk](/Images/Screen_Installer_Sparkylinux10.jpg)
+
+Pour le nom cours -> noah
+Pour le nom longs -> noah
+hostname -> sparky
 
 Q13. Quelle est la taille de disque minimum recommandée pour installer la distribution Sparky en mode cli 
 
