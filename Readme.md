@@ -88,8 +88,6 @@ cd /
 
 Q5. Que signifie l'option `-l` avec la commande `ls` 
 
-> votre réponse ?!
-
 Affiche le résultat de ls en une list, avec plus d'information (permission de fichier, date de modif etc)
 
 Q6. Décrypter la ligne où se trouve le répertoire **home**    
@@ -114,38 +112,27 @@ root -> le groupe utilisateur dans lequelle le dossier est
 Sep 17 13:11 -> Date de dernier modif 
 
 home -> le dossier
-> votre réponse ?!
 
 **J.** Créez un répertoire de travail nommé « EMSY_VosInitiales» 
 
 Q7. dans quel dossier racine allez-vous le placer (justifiez votre réponse) 
 
-> votre réponse ?!
-
 home/live
 
 Q8. Quelle commande allez-vous utiliser pour faire ceci ?  
-
-> votre commande ?!
 
 mkdir /home/live/EMSY_NRN
 
 **K.** Dans ce répertoire, créez un fichier texte que vous nommerez `TESTSLO_XXX_XXX` et éditez celui en écrivant un texte, exemple : "TP linux by XXX et XXX".
 	   Utiliser la commande `vi`
 
-> votre commande ?!
-
 vi /home/live/EMSY_NRN/TESTSLO_NRN
 
 Q9. Pouvez-vous éditez un fichier uniquement avec la commande `vi` 
 
-> votre réponse ?!
-
 oui
 
 Q10. Si vous éteignez la machine virtuelle et que vous la rallumez, est-ce que le répertoire créé ci-dessus existe toujours (justifiez votre réponse) ? 
-
-> votre réponse ?!
 
 Non car nous somme dans l'ISO, le systeme est actuallement une image chargé du disque, elle n'est pas sauvegarder ??
 
@@ -155,13 +142,9 @@ Non car nous somme dans l'ISO, le systeme est actuallement une image chargé du 
 
 Q11. Que signifie **sda** ? 
 
-> votre réponse ?!
-
 Le disque dure (sd)a. SD voulant dire SCSI Disk. a étant la lettre du disque.
 
 Q12. Quelle différence y a-t-il entre le répertoire de la question Q6 et celui du point L (justifiez votre réponse) ?
-
-> votre réponse ?!
 
 home est un dossier normal. /dev/sda n'est pas un dossier, c'est un fichier représentant le disque, un pointeur vers le disque. écrir dans le fichier sda reviens a écrir dans le disque.
 
@@ -186,25 +169,17 @@ hostname -> sparky
 
 Q13. Quelle est la taille de disque minimum recommandée pour installer la distribution Sparky en mode cli 
 
-> votre réponse ?!
-
 2G
 
 Q14. A quoi sert la partition swap ? Est-ce que ce principe existe-t-il sur les OS Microsoft Windows ? 
-
-> votre réponse ?!
 
 C'est l'équivalent du Pagefile sur windows. Elle permet d'écrire des données de la ram dans le disque dur.
 
 Q15. Quel format pourriez-vous utiliser pour la 3ème partition afin qu’elle soit également accessible depuis un OS Microsoft ? 
 
-> votre réponse ?!
-
 Microsoft basic data (Fat32)
 
 Q16. Durant l’installation, on vous demande deux noms d’utilisateur. A quoi correspondent-ils ? 
-
-> votre réponse ?!
 
 Le nom long est le nom complet de l'utilisateur( par ex. John Doe), le nom court est celui qui est utiliser par linux pour référer a l'utilisateur (par ex le dossier home sera le nom court, par ex. john)
 
@@ -213,8 +188,6 @@ Le nom long est le nom complet de l'utilisateur( par ex. John Doe), le nom court
 ![Placer votre capture d'écran](/Capture/N.png) 
 
 **O.** Trouvez la ou les lignes de commande permettant de changer le clavier et procédez à la configuiration 
-
-> votre commande ?!
 
 sudo nano /etc/default/keyboard, écrir Layout="ch", variant="fr" ou sudo dpkg-reconfigure keyboard-configuration
 
@@ -236,37 +209,25 @@ sudo nano /etc/default/keyboard, écrir Layout="ch", variant="fr" ou sudo dpkg-r
 
 Q17. A quoi sert `nano` ? 
 
-> votre réponse ?!
-
 C'est un éditeur de texte
 
 **Q.** Testez si l’application `git` est installée sur votre distribution, si ce n’est pas le cas installez un client git. 
 
 Q18. Comment savoir si `git` est déjà installé ? 
 
-> votre réponse ?!
-
 L'on peut simplement essayer d'utiliser la commande git, si elle est présente nous aurons une erreur d'argument manquans, si git n'est pas installer l'erreur seras "command not found"
-
-> votre commande ?!
 
 git
 
 Q19. Si le client `git` n'est pas installé, quelle(s) commande(s) utilisez-vous pour l’installer ? 
 
-> votre commande ?! 
-
 sudo apt install git
 
 Q20. Que veut dire `apt` ? 
 
-> votre réponse ?!
-
 C'est le package manager (l'installateur de logiciel). Son nom veux dire "Advanced Packaging Tool"
 
 Q21. Est-ce que cette commande (`apt`) peut être utilisée sur toutes les distributions Linux (justifiez votre réponse)? 
-
-> votre réponse ?!
 
 Pas tous ! Pas toutes les distros linux utilise le meme package manager, certaine utilise pacman, nix, guix, portage, etc..
 
@@ -274,19 +235,13 @@ Pas tous ! Pas toutes les distros linux utilise le meme package manager, certain
        
 **Attention** : Ici on veut que l’utilisateur (vous) ait les droits de lecture, d’écriture et d’exécution.
 
-> votre commande ?!
-
 mkdir ~/EMSY_TP1_NRN -m=rwx
 
 Q22. Quel est le répertoire utilisateur ?  
 
-> votre réponse ?!
-
 ~/ ou /home/noah
 
 Q23. Quelles sont les commandes pour changer les droits d'utilisateurs (lecture - écriture - execution) ?  
-
-> votre commande ?!
 
 chmod u+rwx ~/EMSY_TP1_NRN (u pour l'utilisateur possédent le fichier, a pour tous les utilisateus, g pour les utilisateurs dans le group dans le quelle le fichier est, o pour les utilisateur n'étant pas dans le group du fichier), + pour ajouter une permission (- pour enlever, = pour définir). r pour read, w pour write, x pour execute, X pour appliquer execute a un dossier, s pour change l'UID ou GID, t pour définir le sticky bit.
 
@@ -304,8 +259,6 @@ Q24. Qu’observez-vous dans ce répertoire ?
 
 **U.**	Vérifiez si le compilateur `gcc` est bien installé. Notez la version du logiciel
 
-> votre réponse ?!
-
 ![Placer votre capture d'écran](/Capture/U.png)
 
 **U-A.** Tapez les commandes suivantes :
@@ -319,8 +272,6 @@ Remarque : « fichier » est à remplacer par le nom de votre choix
 
 Q25. Quels sont les fichiers qui ont été générés 
 
-> votre réponse ?!
-
 ![Placer votre capture d'écran](/Capture/Q25.png)
 
 **V.** Entrez la commande suivante : `./fichier`
@@ -328,8 +279,6 @@ Q25. Quels sont les fichiers qui ont été générés
 ![Placer votre capture d'écran](/Capture/V.png)
 
 Q26. Que se passe-t-il ?
-
-> votre réponse ?!
 
 Le program est executé.
 
