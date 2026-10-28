@@ -94,15 +94,13 @@ Affiche le résultat de ls en une list, avec plus d'information (permission de f
 
 Q6. Décrypter la ligne où se trouve le répertoire **home**    
 
-[Placer votre capture d'écran](/Capture/)
-
 drwxr-xr-x 1 root root 60 Sep 17 13:11 home
 
 dr -> c'est un dossier
 wxr -> les permission du proprio du dossier (Ici write, execute, read)
--
+\-
 xr -> permission du group utilisateur dans lequelle le dossier est (Ici execute, read)
--
+\-
 x -> permission du reste des utilisateur (ceux qui ne ont pas de le groupe ou pas proprio, Ici execute)
 
 1 -> le dossier a un seul hard link
