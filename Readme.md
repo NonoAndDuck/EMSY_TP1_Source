@@ -56,11 +56,11 @@ Workstation Player, à l’aide d’une image disque (ISO).
 
 **G.** Lancement du live CD : 
 
-[Placer votre capture d'écran](/Capture/G1.png) 
+![Placer votre capture d'écran](/Capture/G1.png) 
 
 Shell Linux : 
 
-[Placer votre capture d'écran](/Capture/G2.png) 
+![Placer votre capture d'écran](/Capture/G2.png) 
 
 > **ATTENTION** : par défaut, le clavier est configuré est **Clavier Americain**
 
@@ -197,15 +197,25 @@ Le nom long est le nom complet de l'utilisateur( par ex. John Doe), le nom court
 
 **N.** Une fois l’installation de Linux terminée, prenez une capture d’écran du démarrage de votre système (GRUB)
 
-![Placer votre capture d'écran](/Capture/Capture%20d'écran%202026-09-17%20161448.png) 
+![Placer votre capture d'écran](/Capture/N.png) 
 
 **O.** Trouvez la ou les lignes de commande permettant de changer le clavier et procédez à la configuiration 
 
 > votre commande ?!
 
-sudo nano /etc/default/keyboard, écrir Layout="ch", variant="fr" ou sudo dkpg-reconfigure keyboard-configuration
+sudo nano /etc/default/keyboard, écrir Layout="ch", variant="fr" ou sudo dpkg-reconfigure keyboard-configuration
 
-![Placer votre capture d'écran]() 
+![Placer votre capture d'écran](/Capture/O1.png) 
+
+![Placer votre capture d'écran](/Capture/O2.png)
+
+![Placer votre capture d'écran](/Capture/O3.png)
+
+![Placer votre capture d'écran](/Capture/O4.png)
+
+![Placer votre capture d'écran](/Capture/O5.png)
+
+![Placer votre capture d'écran](/Capture/O6.png)
 
 **P.** Tapez la commande : `nano -version`
 
@@ -232,6 +242,8 @@ git
 Q19. Si le client `git` n'est pas installé, quelle(s) commande(s) utilisez-vous pour l’installer ? 
 
 > votre commande ?! 
+
+sudo apt install git
 
 Q20. Que veut dire `apt` ? 
 
@@ -296,7 +308,7 @@ Q25. Quels sont les fichiers qui ont été générés
 
 > votre réponse ?!
 
-![Placer votre capture d'écran]()
+![Placer votre capture d'écran](/Capture/Q25.png)
 
 **V.** Entrez la commande suivante : `./fichier`
 
