@@ -78,7 +78,7 @@ azerty (fr) ou (fr_FR)
 
 **H.** Déplacez-vous à la **racine du système** en utilisant la commande suivante : `cd` 
 
-Q4. vore commande ?!
+Q4. votre commande ?!
 
 cd /
 
@@ -139,11 +139,13 @@ Q11. Que signifie **sda** ?
 
 > votre réponse ?!
 
-Le disque dur(sd) a
+Le disque dure (sd)a. SD voulant dire SCSI Disk. a étant la lettre du disque.
 
 Q12. Quelle différence y a-t-il entre le répertoire de la question Q6 et celui du point L (justifiez votre réponse) ?
 
 > votre réponse ?!
+
+home est un dossier normal. /dev/sda n'est pas un dossier, c'est un fichier représentant le disque, un pointeur vers le disque. écrir dans le fichier sda reviens a écrir dans le disque.
 
 ## Installation de SparkyLinux sur la VM
 
@@ -173,7 +175,7 @@ Q16. Durant l’installation, on vous demande deux noms d’utilisateur. A quoi 
 
 > votre réponse ?!
 
-Le nom long est le nom complet de l'utilisateur, le nom court est celui qui est utiliser par linux pour référer a l'utilisateur (par ex le dossier home sera le nom court)
+Le nom long est le nom complet de l'utilisateur( par ex. John Doe), le nom court est celui qui est utiliser par linux pour référer a l'utilisateur (par ex le dossier home sera le nom court, par ex. john)
 
 **N.** Une fois l’installation de Linux terminée, prenez une capture d’écran du démarrage de votre système (GRUB)
 
@@ -183,7 +185,7 @@ Le nom long est le nom complet de l'utilisateur, le nom court est celui qui est 
 
 > votre commande ?!
 
-sudo nano /etc/default/keyboard -> Layout="ch", variant="fr" ou sudo dkpg-reconfigure keyboard-configuration
+sudo nano /etc/default/keyboard, écrir Layout="ch", variant="fr" ou sudo dkpg-reconfigure keyboard-configuration
 
 ![Placer votre capture d'écran]() 
 
@@ -223,7 +225,7 @@ Q21. Est-ce que cette commande (`apt`) peut être utilisée sur toutes les distr
 
 > votre réponse ?!
 
-Pas tous ! Pas toutes les distros linux utilise le meme package manager, certaine utilise pacman, nix, guix, etc..
+Pas tous ! Pas toutes les distros linux utilise le meme package manager, certaine utilise pacman, nix, guix, portage, etc..
 
 **R.** Créez un sous-répertoire « EMSY_TP1_XXX-YYY » dans le répertoire de votre utilisateur. 
        
@@ -243,7 +245,7 @@ Q23. Quelles sont les commandes pour changer les droits d'utilisateurs (lecture 
 
 > votre commande ?!
 
-chmod u+rwx ~/EMSY_TP1_NRN (u pour l'utilisateur possédent le fichier, a pour tous les utilisateus, g pour les utilisateurs dans le group dans le quelle le fichier est, o pour les utilisateur n'étant pas dans le group du fichier)
+chmod u+rwx ~/EMSY_TP1_NRN (u pour l'utilisateur possédent le fichier, a pour tous les utilisateus, g pour les utilisateurs dans le group dans le quelle le fichier est, o pour les utilisateur n'étant pas dans le group du fichier), + pour ajouter une permission (- pour enlever). r pour read, w pour write, x pour execute
 
 **S.** Dans ce répertoire, tapez la commande : `git clone https://github.com/votreDepot/EMSY_TP1_Source`
 
@@ -286,7 +288,7 @@ Q26. Que se passe-t-il ?
 
 > votre réponse ?!
 
-
+Le program est executé.
 
 ...A compléter...
 
