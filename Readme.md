@@ -56,11 +56,11 @@ Workstation Player, à l’aide d’une image disque (ISO).
 
 **G.** Lancement du live CD : 
 
-[Placer votre capture d'écran]() 
+[Placer votre capture d'écran](/Capture/G1.png) 
 
 Shell Linux : 
 
-[Placer votre capture d'écran]() 
+[Placer votre capture d'écran](/Capture/G2.png) 
 
 > **ATTENTION** : par défaut, le clavier est configuré est **Clavier Americain**
 
@@ -84,7 +84,7 @@ cd /
 
 **I.** Affichez le contenu de la racine avec la commande : `ls –l`	
 
-![Placer votre capture d'écran]() 
+![Placer votre capture d'écran](/Capture/H.png) 
 
 Q5. Que signifie l'option `-l` avec la commande `ls` 
 
@@ -94,8 +94,28 @@ Affiche le résultat de ls en une list, avec plus d'information (permission de f
 
 Q6. Décrypter la ligne où se trouve le répertoire **home**    
 
-[Placer votre capture d'écran]()
+[Placer votre capture d'écran](/Capture/)
 
+drwxr-xr-x 1 root root 60 Sep 17 13:11 home
+
+dr -> c'est un dossier
+wxr -> les permission du proprio du dossier (Ici write, execute, read)
+-
+xr -> permission du group utilisateur dans lequelle le dossier est (Ici execute, read)
+-
+x -> permission du reste des utilisateur (ceux qui ne ont pas de le groupe ou pas proprio, Ici execute)
+
+1 -> le dossier a un seul hard link
+
+root -> l'utilisateur root est le proprio
+
+root -> le groupe utilisateur dans lequelle le dossier est
+
+60 -> la taille du dossier
+
+Sep 17 13:11 -> Date de dernier modif 
+
+home -> le dossier
 > votre réponse ?!
 
 **J.** Créez un répertoire de travail nommé « EMSY_VosInitiales» 
@@ -133,7 +153,7 @@ Non car nous somme dans l'ISO, le systeme est actuallement une image chargé du 
 
 **L.** Tapez la commande `ls -l /dev/sda` 
 
-![Placer votre capture d'écran]() 
+![Placer votre capture d'écran](/Capture/K2.png) 
 
 Q11. Que signifie **sda** ? 
 
@@ -179,7 +199,7 @@ Le nom long est le nom complet de l'utilisateur( par ex. John Doe), le nom court
 
 **N.** Une fois l’installation de Linux terminée, prenez une capture d’écran du démarrage de votre système (GRUB)
 
-![Placer votre capture d'écran]() 
+![Placer votre capture d'écran](/Capture/Capture%20d'écran%202026-09-17%20161448.png) 
 
 **O.** Trouvez la ou les lignes de commande permettant de changer le clavier et procédez à la configuiration 
 
@@ -191,7 +211,7 @@ sudo nano /etc/default/keyboard, écrir Layout="ch", variant="fr" ou sudo dkpg-r
 
 **P.** Tapez la commande : `nano -version`
 
-![Placer votre capture d'écran]() 
+![Placer votre capture d'écran](/Capture/P.png) 
 
 Q17. A quoi sert `nano` ? 
 
@@ -245,7 +265,7 @@ Q23. Quelles sont les commandes pour changer les droits d'utilisateurs (lecture 
 
 > votre commande ?!
 
-chmod u+rwx ~/EMSY_TP1_NRN (u pour l'utilisateur possédent le fichier, a pour tous les utilisateus, g pour les utilisateurs dans le group dans le quelle le fichier est, o pour les utilisateur n'étant pas dans le group du fichier), + pour ajouter une permission (- pour enlever). r pour read, w pour write, x pour execute
+chmod u+rwx ~/EMSY_TP1_NRN (u pour l'utilisateur possédent le fichier, a pour tous les utilisateus, g pour les utilisateurs dans le group dans le quelle le fichier est, o pour les utilisateur n'étant pas dans le group du fichier), + pour ajouter une permission (- pour enlever, = pour définir). r pour read, w pour write, x pour execute, X pour appliquer execute a un dossier, s pour change l'UID ou GID, t pour définir le sticky bit.
 
 **S.** Dans ce répertoire, tapez la commande : `git clone https://github.com/votreDepot/EMSY_TP1_Source`
 
@@ -253,17 +273,17 @@ chmod u+rwx ~/EMSY_TP1_NRN (u pour l'utilisateur possédent le fichier, a pour t
 
 Q24. Qu’observez-vous dans ce répertoire ?
 
-![Placer votre capture d'écran]()
+![Placer votre capture d'écran](/Capture/S.png)
 
 **T.** Editez le fichier source `.c` avec l’éditeur de texte « nano ». -> Réalisez un petit programme en C (par exemple de type « Hello world »).
 
-![Placer votre capture d'écran]()
+![Placer votre capture d'écran](/Capture/T.png)
 
 **U.**	Vérifiez si le compilateur `gcc` est bien installé. Notez la version du logiciel
 
 > votre réponse ?!
 
-![Placer votre capture d'écran]()
+![Placer votre capture d'écran](/Capture/U.png)
 
 **U-A.** Tapez les commandes suivantes :
 ```Shell 
@@ -272,7 +292,7 @@ gcc -o fichier fichier.o
 ```
 Remarque : « fichier » est à remplacer par le nom de votre choix
 
-![Placer votre capture d'écran]()
+![Placer votre capture d'écran](/Capture/U-A.png)
 
 Q25. Quels sont les fichiers qui ont été générés 
 
@@ -282,7 +302,7 @@ Q25. Quels sont les fichiers qui ont été générés
 
 **V.** Entrez la commande suivante : `./fichier`
 
-![Placer votre capture d'écran]()
+![Placer votre capture d'écran](/Capture/V.png)
 
 Q26. Que se passe-t-il ?
 
