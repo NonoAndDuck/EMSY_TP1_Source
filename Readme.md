@@ -157,7 +157,7 @@ Q13. Quelle est la taille de disque minimum recommandée pour installer la distr
 
 > votre réponse ?!
 
-10G
+2G
 
 Q14. A quoi sert la partition swap ? Est-ce que ce principe existe-t-il sur les OS Microsoft Windows ? 
 
